@@ -1,0 +1,154 @@
+:root {
+  /* Colors - Classic (Green) Theme */
+  --color-bg-inner: #0b8a78;
+  --color-bg-mid: #044e3b;
+  --color-bg-outer: #011411;
+  --color-accent: #fbcfe8;
+  --color-accent-rgb: 251, 207, 232;
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.74);
+  --color-text-dim: rgba(255, 255, 255, 0.62);
+  --color-glass-bg: rgba(255, 255, 255, 0.04);
+  --color-glass-border: rgba(255, 255, 255, 0.12);
+  --color-glass-hover-bg: rgba(255, 255, 255, 0.12);
+  --color-glass-hover-border: rgba(255, 255, 255, 0.4);
+  --color-button-bg: rgba(0, 0, 0, 0.5);
+  --color-button-hover: rgba(0, 0, 0, 0.7);
+  --color-button-secondary-bg: rgba(255, 255, 255, 0.05);
+  --color-button-secondary-border: rgba(255, 255, 255, 0.2);
+  --color-star: #fbcfe8;
+  --color-avatar-gradient-start: rgba(251, 207, 232, 0.8);
+  --color-avatar-gradient-end: rgba(255, 255, 255, 0.3);
+  --color-avatar-text: #022017;
+  --color-focus: #fbcfe8;
+  --color-focus-ring: rgba(251, 207, 232, 0.6);
+
+  /* Colors - Lime (Blue) Theme */
+  --color-blue-bg-inner: #0b4f8a;
+  --color-blue-bg-mid: #04294e;
+  --color-blue-bg-outer: #010c14;
+  --color-blue-accent: #a5d8ff;
+  --color-blue-accent-rgb: 165, 216, 255;
+  --color-blue-glass-bg: rgba(255, 255, 255, 0.04);
+  --color-blue-glass-border: rgba(255, 255, 255, 0.12);
+  --color-blue-button-bg: rgba(0, 0, 0, 0.5);
+  --color-blue-button-hover: rgba(0, 0, 0, 0.7);
+  --color-blue-star: #a5d8ff;
+  --color-blue-avatar-gradient-start: rgba(165, 216, 255, 0.8);
+  --color-blue-avatar-gradient-end: rgba(255, 255, 255, 0.3);
+  --color-blue-avatar-text: #010c14;
+  --color-blue-focus: #a5d8ff;
+  --color-blue-focus-ring: rgba(165, 216, 255, 0.6);
+
+  /* Typography */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Galada', cursive;
+  --font-ui: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Font Sizes */
+  --fs-xs: 0.7rem;
+  --fs-sm: 0.85rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.1rem;
+  --fs-xl: 1.35rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 3rem;
+  --fs-4xl: 4.5rem;
+  --fs-hero: clamp(5rem, 10vw, 12rem);
+  --fs-story-title: clamp(2.5rem, 4vw, 4.5rem);
+  --fs-cta-title: clamp(2rem, 3vw, 3rem);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 5rem;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 26px;
+  --radius-xl: 34px;
+  --radius-pill: 100px;
+  --radius-circle: 50%;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 22px 40px rgba(0, 0, 0, 0.16);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --transition-theme: 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Z-Index Scale */
+  --z-bg: 0;
+  --z-content: 1;
+  --z-hero-3d: 10;
+  --z-hero-overlay: 50;
+  --z-header: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+
+  /* Container */
+  --container-max: 1200px;
+  --container-padding: 24px;
+}
+
+/* Blue Theme Override */
+[data-theme="blue"] {
+  --color-bg-inner: var(--color-blue-bg-inner);
+  --color-bg-mid: var(--color-blue-bg-mid);
+  --color-bg-outer: var(--color-blue-bg-outer);
+  --color-accent: var(--color-blue-accent);
+  --color-accent-rgb: var(--color-blue-accent-rgb);
+  --color-glass-bg: var(--color-blue-glass-bg);
+  --color-glass-border: var(--color-blue-glass-border);
+  --color-glass-hover-bg: rgba(255, 255, 255, 0.12);
+  --color-glass-hover-border: rgba(255, 255, 255, 0.4);
+  --color-star: var(--color-blue-star);
+  --color-avatar-gradient-start: var(--color-blue-avatar-gradient-start);
+  --color-avatar-gradient-end: var(--color-blue-avatar-gradient-end);
+  --color-avatar-text: var(--color-blue-avatar-text);
+  --color-focus: var(--color-blue-focus);
+  --color-focus-ring: var(--color-blue-focus-ring);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+    --transition-slow: 0ms;
+    --transition-theme: 0ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High Contrast */
+@media (prefers-contrast: more) {
+  :root {
+    --color-glass-bg: rgba(255, 255, 255, 0.1);
+    --color-glass-border: rgba(255, 255, 255, 0.5);
+    --color-text-muted: rgba(255, 255, 255, 0.9);
+    --color-button-bg: rgba(0, 0, 0, 0.8);
+  }
+}

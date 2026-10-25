@@ -1,0 +1,53 @@
+{
+  "name": "diet-soda",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,html}\"",
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:e2e": "playwright test",
+    "test:a11y": "playwright test tests/a11y",
+    "prepare": "husky install",
+    "analyze": "vite build --mode analyze",
+    "pwa:generate": "workbox generateSW workbox-config.js"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "@types/three": "^0.186.0",
+    "@vitest/ui": "^5.0.5",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.13.0",
+    "husky": "^9.1.7",
+    "playwright": "^1.64.1",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.5",
+    "workbox-cli": "^7.4.1"
+  },
+  "dependencies": {
+    "@google/model-viewer": "^4.4.0",
+    "gsap": "^3.15.0",
+    "idb": "^8.0.4",
+    "lit": "^3.3.3",
+    "three": "^0.186.1",
+    "workbox-window": "^7.4.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not op_mini all"
+  ]
+}

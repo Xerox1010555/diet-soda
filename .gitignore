@@ -1,0 +1,15 @@
+# dependencies & builds
+node_modules/
+dist/
+
+# testing
+test-results/
+playwright-report/
+
+# env & misc
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
+*.tsbuildinfo

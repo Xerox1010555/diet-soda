@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Experience the crisp, clean taste of Diet Soda. Zero sugar, zero compromise." />
+    <meta name="theme-color" content="#0b8a78" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Diet Soda | Pure Zero Refreshment" />
+    <meta property="og:description" content="Experience the crisp, clean taste of Diet Soda. Zero sugar, zero compromise." />
+    <meta property="og:image" content="/assets/images/og-default.webp" />
+    <meta property="og:url" content="https://dietsoda.example.com/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Diet Soda | Pure Zero Refreshment" />
+    <meta name="twitter:description" content="Experience the crisp, clean taste of Diet Soda. Zero sugar, zero compromise." />
+    <meta name="twitter:image" content="/assets/images/og-default.webp" />
+
+    <!-- JSON-LD Product Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Diet Soda",
+      "description": "Pure Zero Refreshment - Zero sugar, zero compromise",
+      "brand": {
+        "@type": "Brand",
+        "name": "Soda"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "2.99",
+        "highPrice": "2.99",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/outfit-var.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-var.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/manrope-var.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/galada-var.woff2" />
+    <link rel="preload" as="model" type="model/gltf-binary" href="/assets/models/diet_soda2.glb" />
+    <link rel="preload" as="image" type="image/webp" href="/assets/textures/green_base_color.webp" />
+    <link rel="preload" as="image" type="image/webp" href="/assets/images/green_soda.webp" />
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+    <title>Diet Soda | Pure Zero Refreshment</title>
+
+    <!-- GSAP via CDN (cached) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-AMl4wrwAmWW++I3CHq3Taw03iiI6y+gqy9wU9P+L9K/66fFm2+QmI8L2N5ZbqO954LhVHxRQ== " crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer@4.4.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@google/model-viewer@4.4.0/dist/model-viewer.css" />
+  </head>
+  <body>
+    <soda-bubbles image-url="/assets/images/bubble.png"></soda-bubbles>
+
+    <soda-header></soda-header>
+
+    <soda-hero></soda-hero>
+
+    <soda-story></soda-story>
+
+    <soda-features></soda-features>
+
+    <soda-reviews></soda-reviews>
+
+    <soda-cta></soda-cta>
+
+    <soda-footer></soda-footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

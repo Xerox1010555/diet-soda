@@ -1,0 +1,16 @@
+# Diet Soda - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://dietsoda.example.com/sitemap.xml
+
+# Disallow admin/private paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /node_modules/
+
+# Crawl-delay for polite crawling
+Crawl-delay: 10
