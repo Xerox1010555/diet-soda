@@ -1,4 +1,4 @@
-interface ModelViewerElement extends HTMLElement {
+export interface ModelViewerElement extends HTMLElement {
   src: string;
   alt: string;
   cameraControls: boolean;
@@ -23,6 +23,8 @@ interface ModelViewerElement extends HTMLElement {
   querySelector<K extends keyof HTMLElementTagNameMap>(selector: K): HTMLElementTagNameMap[K] | null;
   querySelector<K extends keyof HTMLElementTagNameMap>(selector: string): Element | null;
 }
+
+export type HTMLModelViewerElement = ModelViewerElement;
 
 declare global {
   namespace JSX {
@@ -52,10 +54,3 @@ declare global {
     }
   }
 }
-
-declare const HTMLModelViewerElement: {
-  prototype: ModelViewerElement;
-  new(): ModelViewerElement;
-};
-
-type HTMLModelViewerElement = ModelViewerElement;

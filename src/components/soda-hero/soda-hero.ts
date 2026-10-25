@@ -433,7 +433,7 @@ export class SodaHero extends SodaElement {
   override async connectedCallback(): Promise<void> {
     super.connectedCallback();
 
-    this.flavorStore.subscribe((flavor) => {
+    flavorStore.subscribe((flavor) => {
       this.currentFlavor = flavor;
       this.requestUpdate();
     });

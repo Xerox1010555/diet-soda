@@ -1,5 +1,5 @@
 import type { Flavor } from '../content/config';
-import type { HTMLModelViewerElement } from '../types/model-viewer';
+import type { ModelViewerElement as HTMLModelViewerElement } from '@google/model-viewer';
 
 export interface ModelViewerController {
   modelViewer: HTMLModelViewerElement | null;
@@ -17,9 +17,9 @@ export function createModelViewerElement(flavor: Flavor): HTMLModelViewerElement
   mv.cameraControls = true;
   mv.disableZoom = true;
   mv.disablePan = true;
-  mv.shadowIntensity = '0';
+  mv.shadowIntensity = 0;
   mv.environmentImage = 'neutral';
-  mv.exposure = '1.5';
+  mv.exposure = 1.5;
   mv.interactionPrompt = 'none';
   mv.cameraOrbit = '0deg 90deg 380%';
   mv.fieldOfView = '30deg';
@@ -65,7 +65,7 @@ export async function swapTexture(mv: HTMLModelViewerElement, textureUrl: string
 }
 
 export function setExposure(mv: HTMLModelViewerElement, value: number): void {
-  mv.exposure = value.toString();
+  mv.exposure = value;
 }
 
 export function setOrbit(mv: HTMLModelViewerElement, orbit: string): void {

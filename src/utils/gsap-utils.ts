@@ -119,7 +119,7 @@ export function refreshScrollTrigger(): void {
 }
 
 export function matchMedia(
-  queries: Record<string, (context: gsap.MatchMedia) => void>
+  queries: Record<string, (context: gsap.Context) => void>
 ): gsap.MatchMedia {
   const mm = gsap.matchMedia();
   Object.entries(queries).forEach(([query, callback]) => {
