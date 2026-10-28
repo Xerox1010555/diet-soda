@@ -13,3 +13,6 @@ playwright-report/
 .DS_Store
 Thumbs.db
 *.tsbuildinfo
+
+.vercel
+.env*
