@@ -1,3 +1,4 @@
+import '@google/model-viewer';
 import './styles/global.css';
 import './styles/animations.css';
 import './components/soda-header/soda-header.ts';
